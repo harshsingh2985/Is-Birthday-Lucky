@@ -11,14 +11,24 @@ function checkisbirthdaylucky(){
 
     const sum=calculatesum(dob);
     console.log(sum);
-    
+
 
 
 }
 
 function calculatesum(dob){
     dob=dob.replaceAll("-","")
-    console.log(dob);
+    // console.log(dob);
+
+    let sum=0;
+
+    for(let index=0;index<dob.length;index++){
+        // sum =sum+dob(charAt(index)) this will not work becuz we cannnot add string to a number
+        sum =sum +Number(dob.charAt(index));
+
+    }
+
+    return sum;
 
 }
 
