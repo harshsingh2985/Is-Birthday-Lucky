@@ -4,7 +4,26 @@ const luckynumber=document.querySelector("#lucky-number")
 
 const button=document.querySelector("#btncheck")
 
-button.addEventListener("click",function getvalues(){
-    console.log(dateofbirth.value,luckynumber.value);
+// now taking input from the user
+function checkisbirthdaylucky(){
+    const dob=dateofbirth.value;
+    // console.log(dob);
 
-})
+    const sum=calculatesum(dob);
+    console.log(sum);
+    
+
+
+}
+
+function calculatesum(dob){
+    dob=dob.replaceAll("-","")
+    console.log(dob);
+
+}
+
+
+
+
+
+button.addEventListener("click",checkisbirthdaylucky)
