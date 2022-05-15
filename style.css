@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Radio+Canada:wght@500;700&display=swap');
+
+body{
+    font-family: 'Radio Canada', sans-serif;
+    background-color: var(--primary-dark);
+
+}
+
+:root{
+    --primary-dark:#a78bfa;
+
+}
+
+h1{
+    text-align: center;
+    margin:2rem;
+}
+
+.container{
+    width:50%;
+    margin:auto;
+}
+
+input,label{
+    display:block;
+}
+input{
+    margin-bottom:0.5rem;
+    width:100%;
+
+}
+#check-number{
+    display:block;
+    margin-top: 1rem;
+    margin:auto;
+    background: transparent;
+    
+}
+
